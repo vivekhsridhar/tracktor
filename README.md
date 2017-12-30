@@ -30,3 +30,10 @@ Use
 
 The above code is written using Python 3.6.2 and tested on MacOS Sierra 10.12.6. Image processing functions
 are adaptations from OpenCV 3.2.0. Jupyter notebook is required to view the example notebooks.
+
+Cite
+----
+
+https://zenodo.org/record/1134016#.WkdFSlT1VAY shows how you can cite tracktor in your work. The tool on the bottom
+right side of the page formats the citation based on which journal the reference needs to be provided. Thank You for
+using and citing Tracktor.
