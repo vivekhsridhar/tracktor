@@ -34,6 +34,9 @@ are adaptations from OpenCV 3.2.0. Jupyter notebook is required to view the exam
 Cite
 ----
 
-https://zenodo.org/record/1134016#.WkdFSlT1VAY shows how you can cite tracktor in your work. The tool on the bottom
-right side of the page formats the citation based on which journal the reference needs to be provided. Thank You for
-using and citing Tracktor.
+If you use Tracktor, please cite it using this zenodo DOI:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1134016.svg)](https://doi.org/10.5281/zenodo.1134016)
+
+
+Thank You for using and citing Tracktor!
