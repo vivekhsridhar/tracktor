@@ -46,7 +46,9 @@ Tracktor works on all operating systems (Windows, Linux and Mac).
 
 - [jupyter](http://jupyter.org/)*
 
-*Jupyter notebook is optional. However, I highly recommend it for interactive coding. All example notebooks are written here.
+*Jupyter notebook is optional. However, I highly recommend it for interactive coding. All example notebooks are written here. 
+
+Once installed, place tracktor.py in the same folder as your tracking notebook. Use python to run tracking. Examples are provided in jupyter notebooks.
 
 Cite
 ----
