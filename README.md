@@ -28,7 +28,7 @@ shown to maintain identity when termites touch each other (during trophallaxis).
 Installation
 ------------
 Tracktor works on all operating systems (Windows, Linux and Mac). 
-[pip](https://pip.pypa.io/en/stable/) can be used to install all packages except [OpenCV](http://opencv.org/). OpenCV needs to be installed separately. For Mac users, try using [Homebrew](https://brew.sh/) for OpenCV. 
+[Pip](https://pip.pypa.io/en/stable/) can be used to install all packages except [OpenCV](http://opencv.org/). OpenCV needs to be installed separately. For Mac users, try using [Homebrew](https://brew.sh/) for OpenCV. 
 
 ### Dependencies
 
@@ -46,7 +46,7 @@ Tracktor works on all operating systems (Windows, Linux and Mac).
 
 - [jupyter](http://jupyter.org/)*
 
-* Jupyter notebook is optional. However, I highly recommend it for interactive coding. All example notebooks are written here.
+*Jupyter notebook is optional. However, I highly recommend it for interactive coding. All example notebooks are written here.
 
 Cite
 ----
