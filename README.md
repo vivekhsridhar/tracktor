@@ -30,7 +30,7 @@ Installation
 Tracktor works on all operating systems (Windows, Linux and Mac). 
 [Pip](https://pip.pypa.io/en/stable/) can be used to install all packages except [OpenCV](http://opencv.org/). OpenCV needs to be installed separately. For Mac users, try using [Homebrew](https://brew.sh/) for OpenCV. 
 
-### Dependencies
+#### Dependencies
 
 - [Python 2.7+](http://www.python.org)
 
