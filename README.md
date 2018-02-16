@@ -25,11 +25,28 @@ This example consists of eight termits moving in a petridish. Tracktor is succes
 while maintaining individual identities. In addition to tracking and identifying numerous objects, tracktor is also 
 shown to maintain identity when termites touch each other (during trophallaxis).
 
-Use
----
+Installation
+------------
+Tracktor works on all operating systems (Windows, Linux and Mac). 
+[pip](https://pip.pypa.io/en/stable/) can be used to install all packages except [OpenCV](http://opencv.org/). OpenCV needs to be installed separately. For Mac users, try using [Homebrew](https://brew.sh/) for OpenCV. 
 
-The above code is written using Python 3.6.2 and tested on MacOS Sierra 10.12.6. Image processing functions
-are adaptations from OpenCV 3.2.0. Jupyter notebook is required to view the example notebooks.
+### Dependencies
+
+- [Python 2.7+](http://www.python.org)
+
+- [numpy](http://www.numpy.org/)
+
+- [pandas](https://pandas.pydata.org/)
+
+- [scipy](http://www.scipy.org/)
+
+- [scikit-learn](http://scikit-learn.org/stable/)
+
+- [OpenCV 3.1+](http://opencv.org/)
+
+- [jupyter](http://jupyter.org/)*
+
+* Jupyter notebook is optional. However, I highly recommend it for interactive coding. All example notebooks are written here.
 
 Cite
 ----
