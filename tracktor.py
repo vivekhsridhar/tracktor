@@ -79,8 +79,8 @@ def detect_and_draw_contours(frame, thresh, meas_last, meas_now, min_area = 0, m
         else:
             cv2.drawContours(final, contours, i, (0,0,255), 1)
             M = cv2.moments(contours[i])
-            cx = int(M['m10']/M['m00'])
-            cy = int(M['m01']/M['m00'])
+            cx = M['m10']/M['m00']
+            cy = M['m01']/M['m00']
             meas_now.append([cx,cy])
             i += 1
     return final, contours, meas_last, meas_now
@@ -210,10 +210,10 @@ def reorder_and_draw(final, colours, n_inds, col_ind, meas_now, df, mot, fr_no):
     if mot == False:
         for i in range(len(meas_now)):
             if colours[i%4] == (0,0,255):
-                cv2.circle(final, tuple(meas_now[i]), 5, colours[i%4], -1, cv2.LINE_AA)
+                cv2.circle(final, tuple([int(x) for x in meas_now[i]]), 5, colours[i%4], -1, cv2.LINE_AA)
     else:
         for i in range(n_inds):
-            cv2.circle(final, tuple(meas_now[i]), 5, colours[i%n_inds], -1, cv2.LINE_AA)
+            cv2.circle(final, tuple([int(x) for x in meas_now[i]]), 5, colours[i%n_inds], -1, cv2.LINE_AA)
     
     # add frame number
     font = cv2.FONT_HERSHEY_SCRIPT_SIMPLEX
