@@ -79,8 +79,12 @@ def detect_and_draw_contours(frame, thresh, meas_last, meas_now, min_area = 0, m
         else:
             cv2.drawContours(final, contours, i, (0,0,255), 1)
             M = cv2.moments(contours[i])
-            cx = M['m10']/M['m00']
-            cy = M['m01']/M['m00']
+            if M['m00'] != 0:
+            	cx = M['m10']/M['m00']
+            	cy = M['m01']/M['m00']
+            else:
+            	cx = 0
+            	cy = 0
             meas_now.append([cx,cy])
             i += 1
     return final, contours, meas_last, meas_now
