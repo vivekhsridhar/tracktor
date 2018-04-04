@@ -1,6 +1,6 @@
 ![alt text][logo]
 
-[logo]: tracktor-logo.png
+[logo]: tracktor-logo.jpg
 
 About
 ------
