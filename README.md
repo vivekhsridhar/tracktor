@@ -31,28 +31,11 @@ shown to maintain identity when termites touch each other (during trophallaxis).
 
 Installation
 ------------
-Tracktor works on all operating systems (Windows, Linux and Mac). 
-[Pip](https://pip.pypa.io/en/stable/) can be used to install all packages except [OpenCV](http://opencv.org/). OpenCV needs to be installed separately. For Mac users, try using [Homebrew](https://brew.sh/) for OpenCV. 
+Tracktor works on all operating systems (Windows, Linux and Mac). It is now available for installation as a [Pip](https://pip.pypa.io/en/stable/) package. Use the line below in the the terminal / command prompt to install tracktor.
 
-#### Dependencies
+`pip3 install git+https://github.com/vivekhsridhar/tracktor.git`
 
-- [Python 2.7+](http://www.python.org)
-
-- [numpy](http://www.numpy.org/)
-
-- [pandas](https://pandas.pydata.org/)
-
-- [scipy](http://www.scipy.org/)
-
-- [scikit-learn](http://scikit-learn.org/stable/)
-
-- [OpenCV 3.1+](http://opencv.org/)
-
-- [jupyter](http://jupyter.org/)*
-
-*Jupyter notebook is optional. However, I highly recommend it for interactive coding. All example notebooks are written here. 
-
-Once installed, place tracktor.py in the same folder as your tracking notebook. Use python to run tracking. Examples are provided in jupyter notebooks.
+This installs all dependencies except [OpenCV](http://opencv.org/). OpenCV needs to be installed separately. Additionally, I recommend installing [jupyter notebook](http://jupyter.org/) which is essential for running the example notebooks.
 
 Cite
 ----
