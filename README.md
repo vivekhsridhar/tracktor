@@ -23,14 +23,14 @@ Installation
 
 Follow the steps outlined below. We recommend both installing OpenCV and running Tracktor within a virtual environment using miniconda. A virtual environment can be seen as a closed ‘box’ (i.e the environment) within your computer, in which you can install various things and run software separately from your main system installation. This approach makes it easier to 1) install and 2) prevent potential issues if your machine already runs python (Mac/Linux) or if you have an earlier version of python installed on your machine.
 
-#### 1. Install miniconda
+### 1. Install miniconda
 Miniconda is an open source distribution of python that aims to simplify package management and deployment. Python is a programming language and requires an interpreter (i.e. software) to run. We recommend using python 3 since the code for Tracktor was designed using this version, but python 2.7+ should also work. Download and install [miniconda with python3](https://conda.io/miniconda.html) from the following link (please note that Anaconda, a more elaborate version of miniconda, will also work in the same manner):
 
 [https://conda.io/miniconda.html](https://conda.io/miniconda.html)
 
 **Important**: tick the box "Add Anaconda to my PATH environment variable” when the installer launches, otherwise you will have issues with later stages of this installation tutorial (see step 2 below). The installer states that this is not recommended but the risks to your machine are minimal and establishing a path to Anaconda is needed to run commands from the Terminal ([Mac](https://www.macworld.co.uk/how-to/mac-software/how-use-terminal-on-mac-3608274/)/[Linux](https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/)) or the Command Prompt ([Windows](https://www.digitalcitizen.life/7-ways-launch-command-prompt-windows-7-windows-8)).
 
-#### 2. Create and activate a virtual environment in miniconda
+### 2. Create and activate a virtual environment in miniconda
 Creating a virtual environment will allow to install everything you need in this separate “box”, thus preventing any changes to your main system. Once miniconda is installed, you can create a virtual environment with a simple command in the terminal/command prompt.
 
 In the Terminal/Command prompt, type:
@@ -63,7 +63,7 @@ or
 `deactivate`
 (Windows)
 
-#### 3. Install necessary python packages
+### 3. Install necessary python packages
 All packages should be installed from within your virtual environment. Activate your virtual environment as explained in section 2.
 
 Once this is done, we will use [pip](https://pip.pypa.io/en/stable/), a python installer, to install all relevant packages. Run:
@@ -85,7 +85,7 @@ Once all of these packages are installed, create a ‘kernel’ for your virtual
 
 `m -python ipykernel install --user --name myenv --display-name "python (myenv)”`
 
-#### 4. Install OpenCV
+### 4. Install OpenCV
 [OpenCV](https://en.wikipedia.org/wiki/OpenCV) (Open Source Computer Vision) is a library of programming functions focused on real-time computer vision. OpenCV is freeware that works across all platforms but installing it on your computer might be the trickiest part of getting Tracktor to run on your machine. Fortunately miniconda allows installing  OpenCV easily. Run:
 
 `conda install -c menpo opencv3`
@@ -103,7 +103,7 @@ If these two lines give no error: congratulations, the installation was successf
 
 It is possible that the installation does not work as described on your machine. If you are having difficulties with this part, please first check online for solutions, or get in touch with an IT specialist at your institution or a computer savvy colleague to help you out. As mentioned, installing OpenCV is the trickiest part of getting Tracktor up and running, but as soon as OpenCV is properly installed, you will be able to get on with your tracking. For more information, see: [https://anaconda.org/menpo/opencv3](https://anaconda.org/menpo/opencv3)
 
-#### 5. Download tracktor
+### 5. Download tracktor
 Go on [Tracktor’s GitHub page](https://github.com/vivekhsridhar/tracktor) and click the green “clone or download” button. Download the .zip file to your choice location on your computer, and unzip the folder.
 
 Tracktor is basically just a set of lines of code, there is no “installation” required as for most software, and there is no GUI (Graphical User Interface). You will need to enter the various parameters (e.g. name of video, location of the video, etc.) directly into the code, but we will guide you through it for an easy start. For your understanding, here’s a short description of the contents of Tracktor. All the files or folders, which are labelled below as “irrelevant” are not necessary to understand how to work with tracktor.
@@ -131,7 +131,7 @@ tracktor.py	This is the actual program. All the functions used in tracktor are d
 Running tracktor
 ----------------
 
-#### 6. Open a jupyter notebook
+### 6. Open a jupyter notebook
 We recommend running Tracktor through jupyter notebook. First, ensure that your virtual environment is activated (see section 2). Then, start jupyter notebook by typing:
 
 `jupyter notebook`
@@ -150,7 +150,7 @@ Jupyter will ask you to select the kernel you want this notebook to run in. It i
 
 **Important:** you must also specify the file path for Tracktor to locate the example videos or your own videos on your machine. See instructions on how/where to do this in Section 7 below.
 
-#### 7. Running the example code
+### 7. Running the example code
 The code to run Tracktor is annotated with comments to help your navigate it. You will find explanations for the various functions used, how to change the parameters in these functions, and what each parameter does, directly in the code. If you want further explanations, you can easily access the description of any function in jupyter notebook by placing your cursor inside the parentheses immediately after a function and pressing ‘**shift + tab**’ simultaneously. This will display the comments associated with this function from the main code. Please note that the descriptions we provide are only for functions directly associated with Tracktor (all functions starting with “tr.”).  Other functions (i.e. from python or OpenCV) can/should be understood by accessing their description as outlined above. Alternatively, you can also find detailed comments in the main code for Tracktor: tracktor.py, which is located in the subfolder tracktor-master\tracktor when you download Tracktor from GitHub.
 
 The Jupyter notebook examples we provide (single_fish.ipynb, spider_track.ipynb, track_termites.ipynb) are organized in 3 sections (called ‘cells’). Reminder: these examples are located in the subfolder tracktor-master\examples.
@@ -169,7 +169,7 @@ That’s it! You can now run Tracktor on one of the example video of your choice
 
 **When Tracktor is running, an additional window opens showing you what is being tracked.** This window might not be immediately obvious and you may have to look for it on your machine (e.g. press Alt+ Tab in Windows to navigate through open windows). Once the tracking is complete, **Tracktor will output 2 files:** one video with the tracking overlaid on it and one .csv file with the XY coordinates from the tracking. Remember that you must specify the file path (in cell 2) where you want Tracktor to save the output files!
 
-#### 8. Running tracktor on your videos
+### 8. Running tracktor on your videos
 Once you have familiarized yourself with Tracktor with the examples provided, you can use the code from an example of your choice (e.g. single_fish.ipynb) and modify the tracking parameters in cell 2 (i.e. block size, offset, min/max_area) to suit your own purpose. Remember that you must specify the file path (in cell 2) where you want Tracktor to 1) access your videos, and 2) save the output files. **Important:** if you move files around (e.g. you move the notebook single_fish.ipynb to a different folder and edit it to fit your own tracking problem), you must also move the program file “tracktor.py” along with it, otherwise the tracking will not work. 
 
 In order to track animals in the frame, we convert the original image into a black and white image. This is known as [thresholding](https://docs.opencv.org/3.4.0/d7/d4d/tutorial_py_thresholding.html). Post thresholding, we can then classify all black pixels as background and white pixels as the animal. This is why good contrast between background and foreground is essential for Tracktor to work effectively.
@@ -204,7 +204,7 @@ The ‘**pxpercm**’ parameter corresponds to the scale (i.e. the number of pix
 
 **Note:** ImageJ can only open import .avi files with specific codecs (e.g. MJPEG). If you cannot open you video, convert it into an image stack (individual frames) or a .avi file with the codec MJPEG. This can be done easily with the freeware [FFmpeg](https://www.ffmpeg.org/) (or any other software of your choice). FFmpeg is a powerful, versatile solution to convert video – it is code-based but there are several GUI available if you prefer this option. An excellent one for Windows is [myFFmpeg](http://www.myffmpeg.com/). Others are available; simply search FFmpeg GUI in Google.
 
-#### 9. Common problems and fixes
+### 9. Common problems and fixes
 If you encounter issues or cryptic error messages we recommend searching in Google for answers. There is a large community of people using OpenCV-based solutions for tracking and most issues have a solution on Stack Overflow. Additionally, below are some examples of issues you might encounter and fixes. If your problems persist, don’t hesitate to get in touch with us by [email](mailto:vsridhar@orn.mpg.de) or by reporting an issue on [GitHub](https://github.com/vivekhsridhar/tracktor). We will do our best to help you get started with Tracktor. 
 
 **__get I one or several error message(s) after running cell 1 for one of the examples provided with Tracktor__**
