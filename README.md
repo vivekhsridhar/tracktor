@@ -12,7 +12,9 @@ Contents
 1.	[About](#about)
 2.	[Requirements](#requirements)
 3.	[Installation](#installation)
+
 &nbsp;&nbsp;&nbsp;&nbsp;a.	[Install miniconda](#install-miniconda)
+&nbsp;&nbsp;&nbsp;&nbsp;b.	[Create and activate a virtual environment in miniconda](#create-and-activate-a-virtual-environment-in-miniconda)
 4.	[Running tracktor](#running-tracktor)
 5.	[FAQ](#faq)
 
