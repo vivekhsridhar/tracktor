@@ -218,20 +218,25 @@ FAQ
 
 If you encounter issues or cryptic error messages we recommend searching in Google for answers. There is a large community of people using OpenCV-based solutions for tracking and most issues have a solution on Stack Overflow. Additionally, below are some examples of issues you might encounter and fixes. If your problems persist, don’t hesitate to get in touch with us by [email](mailto:vsridhar@orn.mpg.de) or by reporting an issue on [GitHub](https://github.com/vivekhsridhar/tracktor). We will do our best to help you get started with Tracktor. 
 
-**__get I one or several error message(s) after running cell 1 for one of the examples provided with Tracktor__**
+**__I get one or several error message(s) after running cell 1 for one of the examples provided with Tracktor__**
+
 One of the packages/dependencies was probably not installed properly. Return to 
 Sections 3-4 of this tutorial and verify that all packages were installed correctly.
 
 **__I get the error message “Video file cannot be read!” after running cell 3 for one of the examples provides with Tracktor (or my own tracking problem)__**
+
 This mean that Tracktor cannot locate the input file/video. Make sure that the file path to the video (i.e. where the video is located on your machine) is correctly specified in cell 2. See section 7 of the tutorial, above. For example, change the file path from '/home/user/Documents/Vivek/tracktor/videos/' (the one specified when you download the software from Github) to the location on your computer where these files have been saved (e.g. 'D:\Dropbox\ Tracktor\tracktor-master\videos’). Note that the file path must contain forward slashes (/), not backslahes (\). If copying a file path from a Windows OS, change the backslahes to forward slashes. Important: the file path must also end with a forward slash (e.g. 'D:/Dropbox/ Tracktor/tracktor-master/videos/’)
 
 **__I get one or several error messages after running cell 3 for my own tracking problem(s)__**
+
 The tracking parameters you specified are probably incorrect. For instance, if there are too many targets detected, or no targets detected, this can cause Tracktor to crash. The solution is to try other parameter values. For that, restart the kernel, input other parameters, and re-run the code (including cell 1) until you get the desired output.
 
 **__Tracktor crashes after tracking the animal(s) successfully over some period of time__**
+
 Sometimes, Tracktor will succeed at tracking the animal(s) for part of the video and then crash. This is a very good start but it means that, at some point during the video, the tracking parameters are no longer adequate (e.g. the lighting/contrast changed). Continue modifying the parameters until you can successfully track the animal(s) throughout the entire video and you are satisfied with the output.
 
 **__I cannot run python through the Git Bash terminal__**
+
 This seems to be a problem with Git Bash. Run python from the Mac/Linux Terminal or Windows Command Prompt and that will solve it.
 
 Cite
