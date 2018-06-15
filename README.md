@@ -12,7 +12,7 @@ Contents
 1.	[About](#about)  
 2.	[Requirements](#requirements)  
 3.	[Installation](#installation)  
-&nbsp;&nbsp;&nbsp;&nbsp;a.	[Install miniconda](#a.-install-miniconda)  
+&nbsp;&nbsp;&nbsp;&nbsp;a.	[Install miniconda](#-a.-install-miniconda)  
 &nbsp;&nbsp;&nbsp;&nbsp;b.	[Create and activate a virtual environment in miniconda](#b.-create-and-activate-a-virtual-environment-in-miniconda)  
 &nbsp;&nbsp;&nbsp;&nbsp;c.	[Install necessary python packages](#c.-install-necessary-python-packages)  
 &nbsp;&nbsp;&nbsp;&nbsp;d.	[Install OpenCV](#d.-install-opencv)  
