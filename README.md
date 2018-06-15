@@ -12,6 +12,8 @@ Contents
 1.	[About](#about)
 2.	[Requirements](#requirements)
 3.	[Installation](#installation)
+4.	[Running tracktor](#running-tracktor)
+5.	[FAQ](#faq)
 
 About
 ------
@@ -211,7 +213,9 @@ The ‘**pxpercm**’ parameter corresponds to the scale (i.e. the number of pix
 
 **Note:** ImageJ can only open import .avi files with specific codecs (e.g. MJPEG). If you cannot open you video, convert it into an image stack (individual frames) or a .avi file with the codec MJPEG. This can be done easily with the freeware [FFmpeg](https://www.ffmpeg.org/) (or any other software of your choice). FFmpeg is a powerful, versatile solution to convert video – it is code-based but there are several GUI available if you prefer this option. An excellent one for Windows is [myFFmpeg](http://www.myffmpeg.com/). Others are available; simply search FFmpeg GUI in Google.
 
-### 9. Common problems and fixes
+FAQ
+---
+
 If you encounter issues or cryptic error messages we recommend searching in Google for answers. There is a large community of people using OpenCV-based solutions for tracking and most issues have a solution on Stack Overflow. Additionally, below are some examples of issues you might encounter and fixes. If your problems persist, don’t hesitate to get in touch with us by [email](mailto:vsridhar@orn.mpg.de) or by reporting an issue on [GitHub](https://github.com/vivekhsridhar/tracktor). We will do our best to help you get started with Tracktor. 
 
 **__get I one or several error message(s) after running cell 1 for one of the examples provided with Tracktor__**
