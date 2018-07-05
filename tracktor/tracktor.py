@@ -224,3 +224,26 @@ def reorder_and_draw(final, colours, n_inds, col_ind, meas_now, df, mot, fr_no):
     cv2.putText(final, str(int(fr_no)), (5,30), font, 1, (255,255,255), 2)
         
     return final, meas_now, df
+
+
+def reject_outliers(data, m):
+    """
+    This function removes any outliers from presented data.
+    
+    Parameters
+    ----------
+    data: pandas.Series
+        a column from a pandas dataframe that needs smoothing
+    m: float
+        standard deviation cutoff beyond which, datapoint is considered as an outlier
+        
+    Returns
+    -------
+    index: ndarray
+        an array of indices of points that are not outliers
+    """
+    d = np.abs(data - np.nanmedian(data))
+    mdev = np.nanmedian(d)
+    s = d/mdev if mdev else 0.
+    return np.where(s < m)
+
