@@ -88,13 +88,13 @@ Once this is done, we will use [pip](https://pip.pypa.io/en/stable/), a python i
 `conda install pip`
 
 If you are having difficulty running Pip, information is available [here](https://pip.pypa.io/en/stable/). Install all dependencies except jupyter notebook and opencv with `pip3 install git+https://github.com/vivekhsridhar/tracktor.git`. If you have troubles using this line, you can also install packages singly by running `pip install packagename` in the Terminal or Command Prompt, from within your environment virtual. Install the following packages (e.g. `pip install numpy`):
-  • [numpy](http://www.numpy.org/)
-  • [pandas](https://pandas.pydata.org/)
-  • [scipy](http://www.scipy.org/)
-  • [scikit-learn](http://scikit-learn.org/stable/)
-  • ipython
-  • ipykernel (“conda install ipykernel” also works if you run into issues with pip)
-  • _jupyter notebook*_
+  • [numpy](http://www.numpy.org/)  
+  • [pandas](https://pandas.pydata.org/)  
+  • [scipy](http://www.scipy.org/)  
+  • [scikit-learn](http://scikit-learn.org/stable/)  
+  • ipython  
+  • ipykernel (“conda install ipykernel” also works if you run into issues with pip)  
+  • _jupyter notebook*_  
 
 _*Jupyter notebook_ is optional. However, it is highly recommended for interactive coding. All example notebooks in this tutorial are written as jupyter notebooks. Jupyter is an application that allows editing and running code in an interactive way, via a web browser (+/- similar to Rcommander for the R users, more information [here](http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)).  For basic information on how to work/run lines or ‘cells’ of code in Jupyter notebook, see [here](http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/execute.html). For e.g., it is useful to know that you can 1) display line numbers for your code by selecting View > Toggle line numbers from the menu, and 2) use the shortcut keys shift + enter to run a code cell rather than clicking on the button >|Run.
 
