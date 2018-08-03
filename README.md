@@ -92,6 +92,7 @@ If you are having difficulty running Pip, information is available [here](https:
   • [pandas](https://pandas.pydata.org/)  
   • [scipy](http://www.scipy.org/)  
   • [scikit-learn](http://scikit-learn.org/stable/)  
+  • [matplotlib](https://matplotlib.org/)  
   • ipython  
   • ipykernel (“conda install ipykernel” also works if you run into issues with pip)  
   • _jupyter notebook*_  
