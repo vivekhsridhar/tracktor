@@ -87,7 +87,7 @@ Once this is done, we will use [pip](https://pip.pypa.io/en/stable/), a python i
 
 `conda install pip`
 
-If you are having difficulty running Pip, information is available [here](https://pip.pypa.io/en/stable/). Install all dependencies except jupyter notebook and opencv with `pip install git+https://github.com/vivekhsridhar/tracktor.git`. If you have troubles using this line, you can also install packages singly by running `pip install packagename` in the Terminal or Command Prompt, from within your environment virtual. Install the following packages (e.g. `pip install numpy`):  
+If you are having difficulty running Pip, information is available [here](https://pip.pypa.io/en/stable/). Install all dependencies/packages by running `pip install packagename` in the Terminal or Command Prompt, from within your environment virtual. Install the following packages (e.g. `pip install numpy`):  
   • [numpy](http://www.numpy.org/)  
   • [pandas](https://pandas.pydata.org/)  
   • [scipy](http://www.scipy.org/)  
