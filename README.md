@@ -112,6 +112,10 @@ or (if this doesn’t work):
 
 `conda install -c fonda-forge opencv`
 
+or (if this doesn't work either):
+
+`pip install opencv-contrib-python`
+
 If you do not get an error message, OpenCV is now installed in your virtual environment. You can check if the installation worked by typing:
 
 `python`
@@ -135,11 +139,13 @@ LICENSE					irrelevant
 
 README.md				This Tutorial
 
-single_fish.ipynb	Example. Jupyter notebook. This code was created to track a single fish in a noisy environment.
+3a Fish_fast-start_escape_response.ipynb	Example. Jupyter notebook. This code was created to track a single fish in a noisy environment.
 
-spider_track.ipynb	Example. Jupyter notebook. This code was created to track 2 spiders of very different sizes, maintaining identities. 
+3b Two-choice_flume_experiment.ipynb Example. Jupyter notebook. This code was created to track a single fish in a tank and to measure its time spent in a user-defined region of interest.
 
-track_termites.ipynb	Example. Jupyter notebook. This code was created to track up to 8 termites of similar sizes, maintaining identities.
+3c Spider_courtship_behaviour.ipynb	Example. Jupyter notebook. This code was created to track 2 spiders of very different sizes, maintaining identities. 
+
+3d Termite_collective_behaviour.ipynb	Example. Jupyter notebook. This code was created to track up to 8 termites of similar sizes, maintaining identities.
 
 tracktor.ai				irrelevant (Tracktor logo)
 tracktor.pdf				irrelevant (Tracktor logo)
