@@ -1,6 +1,6 @@
 ![alt text][logo]
 
-[logo]: logo.jpg
+[logo]: logo.png
 
 Last updated: 05.2018 
 If you find errors in this tutorial, outdated information and/or identify links that are no longer working, please notify Vivek Hari Sridhar by [email](mailto:vsridhar@orn.mpg.de) or by reporting an issue on [GitHub](https://github.com/vivekhsridhar/tracktor). These issues will be fixed as soon as possible.
