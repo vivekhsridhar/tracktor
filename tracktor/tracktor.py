@@ -64,7 +64,10 @@ def detect_and_draw_contours(frame, thresh, meas_last, meas_now, min_area = 0, m
         individual's location on current frame
     """
     # Detect contours and draw them based on specified area thresholds
-    img, contours, hierarchy = cv2.findContours(thresh.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    if int(cv2.__version__[0]) == 3:
+        img, contours, hierarchy = cv2.findContours(thresh.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    else:
+        contours, hierarchy = cv2.findContours(thresh.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
 
     final = frame.copy()

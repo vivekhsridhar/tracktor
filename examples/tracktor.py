@@ -27,8 +27,8 @@ def colour_to_thresh(frame, block_size = 31, offset = 25):
     thresh: ndarray, shape(n_rows, n_cols, 1)
         binarised(0,255) image
     """
-    blur = cv2.blur(frame, (5,5))
-    gray = cv2.cvtColor(blur, cv2.COLOR_BGR2GRAY)
+    frame = cv2.blur(frame, (5,5))
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     thresh = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY_INV, block_size, offset)
     return thresh
 
@@ -64,7 +64,10 @@ def detect_and_draw_contours(frame, thresh, meas_last, meas_now, min_area = 0, m
         individual's location on current frame
     """
     # Detect contours and draw them based on specified area thresholds
-    img, contours, hierarchy = cv2.findContours(thresh.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    if int(cv2.__version__[0]) == 3:
+    	img, contours, hierarchy = cv2.findContours(thresh.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    else:
+    	contours, hierarchy = cv2.findContours(thresh.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
 
     final = frame.copy()
