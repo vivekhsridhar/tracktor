@@ -68,7 +68,7 @@ def detect_and_draw_contours(frame, thresh, meas_last, meas_now, min_area = 0, m
     	img, contours, hierarchy = cv2.findContours(thresh.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     else:
     	contours, hierarchy = cv2.findContours(thresh.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-    img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
+    img = cv2.cvtColor(thresh.copy(), cv2.COLOR_GRAY2BGR)
 
     final = frame.copy()
 
