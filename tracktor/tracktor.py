@@ -78,7 +78,7 @@ def detect_and_draw_contours(frame, thresh, meas_last, meas_now, min_area = 0, m
     while i < len(contours):
         area = cv2.contourArea(contours[i])
         if area < min_area or area > max_area:
-            del contours[i]
+            contours = contours[:i] + contours[i+1:]
         else:
             cv2.drawContours(final, contours, i, (0,0,255), 1)
             M = cv2.moments(contours[i])
